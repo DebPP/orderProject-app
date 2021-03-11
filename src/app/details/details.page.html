@@ -1,0 +1,50 @@
+<ion-content [fullscreen]="true">
+    <div class="img-container">
+        <img class="products-img" [src]='product?.img' />
+    </div>
+    <div class="content">
+       
+              <!-- <ion-buttons slot="start">
+                <ion-back-button
+                    [text]="buttonText"
+                    [icon]="buttonIcon">
+                </ion-back-button>
+              </ion-buttons> -->
+           
+        <!-- <ion-nav-buttons class="btn-back" side="left" (click)="voltar()">
+            <ion-icon name="chevron-back-outline"></ion-icon>
+        </ion-nav-buttons> -->
+        <h3 class="mb-15"> {{product?.name}} </h3>
+        <h5 class="mb-15"> {{product?.description}} </h5>
+        <h4 style="color: #038E3B; font-size: 16px;"> {{product?.price | currency:'BRL':true}}</h4>
+
+        <div class="divider mt-15"></div>
+        <div class="d-flex justify-content-between align-items-center">
+            <div class="d-flex align-items-center mt-15 mb-15">
+                <ion-icon class="icon" name="chatbox-ellipses"></ion-icon>
+                <h4>Alguma observação ?</h4>
+            </div>
+            <div>
+                <h5>{{observacao?.length}}/120</h5>
+            </div>
+        </div>
+        <div>
+            <textarea class="w-100" [(ngModel)]="observacao" maxlength="120" rows="4" style="resize: none"></textarea>
+        </div>
+        <div class="d-flex w-100" style="position: absolute; bottom: 8px;">
+            <div class="btn-qtd d-flex justify-content-between">
+                <div class="btn-add" (click)="addProduto(product?.price, 'add')">
+                    <ion-icon name="add"></ion-icon>
+                </div>
+                <div class="qtd-product"> {{qtdProduto}} </div>
+                <div class="btn-remove" (click)="addProduto(product?.price, 'remove')">
+                    <ion-icon name="remove"></ion-icon>
+                </div>
+            </div>
+            <button class="btn-primary d-flex justify-content-between align-items-center"
+                (click)="confirmation(product?._id)">
+                Adicionar {{ this.total | currency:'BRL':true}}
+            </button>
+        </div>
+    </div>
+</ion-content>

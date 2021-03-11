@@ -1,0 +1,28 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-buttons slot="start">
+            <ion-back-button defaultHref="details/this.idProduct"></ion-back-button>
+        </ion-buttons>
+        <ion-buttons slot="end">
+            <ion-button>
+                Limpar
+            </ion-button>
+        </ion-buttons>
+
+        <ion-title>Confirmação</ion-title>
+    </ion-toolbar>
+</ion-header>
+<ion-content [fullscreen]="true">
+    <div class="container-total">
+        <div>
+            <p>TOTAL</p>
+            <h4>
+                {{this.comanda?.total | currency:'BRL':true}}
+            </h4>
+        </div>
+    </div>
+    <div class="content">
+        <h5>Itens</h5>
+        <div class="divider"></div>
+    </div>
+</ion-content>

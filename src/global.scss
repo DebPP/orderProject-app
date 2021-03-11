@@ -16,7 +16,7 @@
 @import "~@ionic/angular/css/normalize.css";
 @import "~@ionic/angular/css/structure.css";
 @import "~@ionic/angular/css/typography.css";
-@import '~@ionic/angular/css/display.css';
+@import "~@ionic/angular/css/display.css";
 
 /* Optional CSS utils that can be commented out */
 @import "~@ionic/angular/css/padding.css";
@@ -24,3 +24,130 @@
 @import "~@ionic/angular/css/text-alignment.css";
 @import "~@ionic/angular/css/text-transformation.css";
 @import "~@ionic/angular/css/flex-utils.css";
+
+@import url('https://fonts.googleapis.com/css2?family=Glegoo:wght@400;700&display=swap');
+
+html body {
+    font-family: "Comfortaa" !important;
+}
+textarea, input {
+    font-family: "Comfortaa" !important;
+}
+
+.content {
+    margin: 0  14px 66px;
+}
+:root {
+    --ion-safe-area-top: 20px;
+    --ion-safe-area-bottom: 22px;
+}
+.d-flex {
+    display: flex;
+}
+.flex-column {
+    flex-direction: column;
+}
+.justify-content-between {
+    justify-content: space-between;
+}
+.justify-content-around {
+    justify-content: space-around;
+}
+.float-right {
+    float: right;
+}
+.align-items-center{
+    align-items: center;
+}
+.w-100{width: 100% !important}
+.w-50{width: 50% !important}
+.mt-10{margin-top: 10px !important}
+.mb-10{margin-bottom: 10px !important}
+.mt-15{margin-top: 15px !important}
+.mb-15{margin-bottom: 15px !important}
+
+.btn-primary {
+    font-family: "Comfortaa" !important;
+    background-color: #425c5a;
+    border-radius: 7px;
+    color: #ffcea2;
+    width: 13em;
+    height: 2em;
+    font-size: 16px;
+    padding: 22px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.divider{
+    height: 1px;
+    width: 100%;
+    background-color: rgba(120, 120, 120, 0.2);
+}
+.bagde-active {
+    background-color: #ffcea2;
+    width: 3em;
+    height: 2px;
+    margin-top: 4px;
+    position: absolute;
+    bottom: 14px;
+}
+.float-btn {
+    position: fixed;
+    bottom: 12px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.arrow-back{
+    background-color: rgba(120,120,120,0.500);
+    width: 2.5em;
+    padding: 10px;
+    border-radius: 50%;
+    height: 2.5em;
+    position: absolute;
+    top: 10px;
+    left: 8px;
+}
+.btn-qtd{
+    font-family: "Comfortaa" !important;
+    width: 34%;
+    border: 1px solid rgba(120, 120, 120, 0.2);
+    border-radius: 5px;
+    align-items: center;
+    padding: 5px;
+    font-weight: bold;
+    margin-right: 9px;
+}
+.btn-add{
+    height: 2em;
+    width: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #EF596D;
+    font-size: 17px;
+    font-weight: bold;
+}
+.btn-remove{
+    height: 2em;
+    width: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #33B0E7;
+    font-size: 17px;
+    font-weight: bold;
+}
+.btn-back{
+    position: absolute;
+    top: 13px;
+    color: white;
+    font-size: 30px;
+    background-color: rgba(120, 120, 120, 0.2);
+    border-radius: 50%;
+    width: 1em;
+    height: 1em;
+}
